@@ -25,12 +25,12 @@
         </div>
 
         <div class="mb-4">
-            <label for="start_date" class="block text-gray-700">Start Date</label>
+            <label for="start_date" class="block text-gray-700">Task start Date</label>
             <input type="date" id="start_date" name="start_date" class="w-full border-gray-300 rounded-md shadow-sm" required>
         </div>
 
         <div class="mb-4">
-            <label for="end_date" class="block text-gray-700">End Date</label>
+            <label for="end_date" class="block text-gray-700">Task End Date</label>
             <input type="date" id="end_date" name="end_date" class="w-full border-gray-300 rounded-md shadow-sm" required>
         </div>
 
@@ -39,10 +39,5 @@
         </button>
     </form>
 
-  <div class="mt-6">
-        <a href="{{ route('dashboard') }}" 
-           class="bg-indigo-600 text-white px-4 py-2 rounded-md">
-            View My Tasks
-        </a>
-    </div>
+  
 </x-app-layout>
