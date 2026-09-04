@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white shadow-sm sm:rounded-lg p-6">
-                <h1 class="text-2xl font-bold mb-4">🏆 Recent Results</h1>
+                <h1 class="text-2xl font-bold mb-4">🏆 Recent Results(Leaders)</h1>
 
                 @if($users->count())
                     <table class="min-w-full divide-y divide-gray-200">
@@ -39,7 +39,7 @@
     <script>
     setTimeout(function(){
         window.location.reload();
-    }, 900000); // 900000 ms = 15 minutes
+    }, 900000); 
 </script>
 
 </x-app-layout>
