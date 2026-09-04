@@ -20,7 +20,7 @@
                                placeholder="Enter task name..." required>
                     </div>
 
-                    <!-- Description -->
+                   
                     <div>
                         <label for="description" class="block text-gray-700 font-semibold mb-2">Description</label>
                         <textarea id="description" name="description" rows="3"
