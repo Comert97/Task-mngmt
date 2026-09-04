@@ -11,21 +11,17 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
-use App\Providers\RouteServiceProvider; // ✅ Import this
+use App\Providers\RouteServiceProvider; 
 
 class RegisteredUserController extends Controller
 {
-    /**
-     * Display the registration view.
-     */
+  
     public function create(): View
     {
         return view('auth.register');
     }
 
-    /**
-     * Handle an incoming registration request.
-     */
+    
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
@@ -43,7 +39,6 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
         Auth::login($user);
 
-        // ✅ Redirect to /home instead of dashboard
         return redirect(RouteServiceProvider::HOME);
     }
 }

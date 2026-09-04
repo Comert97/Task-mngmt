@@ -16,7 +16,7 @@ class WeeklyResult extends Model
         'score',
     ];
 
-    // Relationship to User
+   
     public function user()
     {
         return $this->belongsTo(User::class);
