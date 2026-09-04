@@ -55,7 +55,7 @@
 <body>
     <div class="overlay">
         <h1>🌿 Welcome to Your Task&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mgt System 🌿</h1>
-        <p>Stay organized and achieve more with a calm workspace.</p>
+        
         <a href="{{ route('login') }}">Login</a>
         <a href="{{ route('register') }}">Register</a>
     </div>
